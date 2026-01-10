@@ -14,6 +14,10 @@ body {
 
 }
 
+/* =============
+    HEADER 
+   ============= */
+
 header {
     display: flex;
     align-items: center;
@@ -63,6 +67,10 @@ header nav ul li a:hover {
 
 }
 
+/* ====================
+    CONTAINER NA MAIN 
+   ==================== */
+
 .container-home {
 
     display: flex;
@@ -70,9 +78,70 @@ header nav ul li a:hover {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #be2929;
+    background: linear-gradient(45deg, #800000 0%, #ff5353 100%);
     height: 500px;
-    width: 500px;
+    width: 90%;
+    padding: 30px;
+
+}
+
+.container-home main h2 {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+/* =============
+    CARDS 
+   ============= */
+
+.cards-container {
+
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.card {
+    
+    display: flex;
+    aspect-ratio: 3 / 2;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: calc(25% - 1rem);
+    background-color: rgb(76, 6, 6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* ===============
+    BOTÃO DA HOME 
+   =============== */
+
+.botao-home {
+
+    display: block;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 50px auto 0;
+    background-color: #800000;
+    color: whitesmoke;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}
+
+.botao-home:hover {
+
+    background-color: red;
+    color: white;
 
 }
 
