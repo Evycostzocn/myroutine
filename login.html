@@ -16,7 +16,7 @@
                 <h2 class="title title-primary">Bem vindo(a) de volta</h2>
                 <p class="description description-primary">Para se manter conectado(a),</p>
                 <p class="description description-primary">por favor logue com suas informações pessoais.</p>
-                <button class="btn btn-primary">Entrar</button>
+                <button id="signin" class="btn btn-primary">Entrar</button>
             </div>
             <!--SEGUNDA COLUNA-->
             <div class="second-column">
@@ -63,31 +63,51 @@
         <div class="content second-content">
             <!--PRIMEIRA COLUNA-->
             <div class="first-column">
-                <h2 class="title">Olá usuário!</h2>
-                <p class="description">Entre com seus dados pessoais</p>
-                <p class="description">Comece sua organização com a gente!</p>
-                <button class="btn">Entrar</button>
+                <h2 class="title title-primary">Olá, usuário!</h2>
+                <p class="description description-primary">Entre com seus dados pessoais</p>
+                <p class="description description-primary">Comece sua organização com a gente!</p>
+                <button id="signup" class="btn btn-primary">Cadastre-se</button>
             </div>
             <!--SEGUNDA COLUNA-->
             <div class="second-column">
-                <h2 class="title">Entre para começar a se organizar</h2>
+                <h2 class="title title-second">Entre para começar a se organizar</h2>
                 <!--SOCIAL MEDIA PART-->
                 <div class="social-media">
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Google</a></li>
-                        <li><a href="#">Linkedin</a></li>
+                    <ul class="list-sm">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fa-brands fa-facebook"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fa-brands fa-google-plus-g"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fa-brands fa-linkedin"></i></li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media"><i class="fa-brands fa-github"></i></li>
+                        </a>
+                        
                     </ul>
                 </div>
-                <p class="description">ou utilize seu email</p>
+                <p class="description description-second">ou utilize seu email</p>
                 <form class="form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                    <a href="#">Esqueceu sua senha?</a>
-                    <button class="btn">Entrar</button>
+                    <label class="label-input" for="">
+                        <i class="fa-regular fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    <a href="#" class="password">Esqueceu sua senha?</a>
+
+                    <button class="btn btn-second">Entrar</button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>
