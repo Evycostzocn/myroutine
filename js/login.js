@@ -33,6 +33,7 @@ if (btnSignup) {
 // FORMULÁRIO DE CADASTRO //
 // ====================== //
 
+// SELECIONA O FORMULARIO DE CADASTRO
 const registerForm = document.querySelector("#registerForm");
 
 // referências de Inputs com ID 
@@ -71,5 +72,48 @@ if (registerForm) {
     alert("Cadastro realizado com sucesso");
 
     registerForm.reset();
+  });
+}
+
+// SELECIONA O FORMULARIO DE LOGIN
+const loginForm = document.querySelector("#loginForm");
+
+// SELECIONA OS INPUTS
+const loginEmailInput = document.querySelector("#loginEmail");
+const loginPasswordInput = document.querySelector("#loginPassword");
+
+if (loginForm) {
+  loginForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // para impedir reload
+    const email = loginEmailInput.value;
+    const password = loginPasswordInput.value;
+
+    //validação simples
+    if (!email || !password) {
+      alert("Preencha email e senha");
+      return;
+    }
+
+    // busca usuários cadastrados
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // procura um usuario com email e senha iguais
+    const userFound = users.find(user => user.email === email && user.password === password);
+
+    if (userFound) {
+      alert(`Bem vindo (a), ${userFound.name}!`);
+
+      // salva usuario encontrado
+      localStorage.setItem("loggedUser", JSON.stringify(userFound));
+
+      //futuramente
+      //window.location.href = "dashboard.html"
+
+    } else {
+      alert("Email ou senha incorretos");
+    }
+
+    loginForm.reset();
+
   });
 }
