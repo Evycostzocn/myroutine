@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>MyRoutine</title>
+</head>
+<body>
+    <div class="container">
+        <!----------------------- ASIDE ----------------------->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/Myroutine  - Logo.png">
+                <h2 class="text-muted">MyRoutine</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <h3>Calendário</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">task</span>
+                    <h3>Tarefas</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined" >notifications</span>
+                    <h3>Notificações</h3>
+                    <span class="notifications-count">77</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">report</span>
+                    <h3>Reportar</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">settings</span>
+                    <h3>Configurações</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+        <!----------------------- FIM DO ASIDE ASIDE ----------------------->
+
+        <!----------------------- MAIN ----------------------->
+        <main>
+            <div class="welcome">
+                <h1>Boa noite, Evy 👋</h1>
+                <p>Você possui 3 tarefas pendentes hoje.</p>
+            </div>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="tarefas-totais">
+                    <span class="material-symbols-outlined">pinboard</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Tarefas Totais</h3>
+                            <h1>7</h1>
+                        </div>
+                    </div>
+                    <small class="text-muted">Bom trabalho!</small>
+                </div>
+                <!----------------------- FIM DAS TAREFAS TOTAIS ----------------------->
+                <div class="tarefas-concluidas">
+                    <span class="material-symbols-outlined">task_alt</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Tarefas Concluídas</h3>
+                            <h1>4</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>57%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Mantenha o foco!</small>
+                </div>
+                <!----------------------- FIM DAS TAREFAS CONCLUÍDAS ----------------------->
+                <div class="tarefas-pendentes">
+                    <span class="material-symbols-outlined">pending</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Tarefas Pendentes</h3>
+                            <h1>3</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>43%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Você está indo bem!</small>
+                </div>
+                <!----------------------- FIM DAS TAREFAS PENDENTES ----------------------->
+            </div>
+        </main>
+    </div>
+</body>
+</html>
